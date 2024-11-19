@@ -1,0 +1,597 @@
+body {
+    animation: transitionIn 1s ease-in-out;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Translate the element by 20px vertically */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Bring the element back to its normal position */
+    }
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+
+
+}
+
+
+
+
+
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    height: 4rem;
+    justify-content: flex-end;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background: white; 
+    transition: background 0.3s ease; 
+    z-index: 500; 
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+.logo {
+    position: fixed;
+    width: 150px; 
+    top: 10px; 
+    left: 70px;
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.8));
+    transition: width 0.3s ease; 
+}
+
+nav {
+    padding: 35px 5%; 
+    display: flex;
+    justify-content: flex-end; 
+    z-index: 1000; 
+    transition: all 0.3s ease;
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+nav li a {
+    height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2d0b00; 
+    align-items: center;
+    text-decoration: none;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #bf2b4d;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    color: #bf2b4d;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+
+
+nav li a:first-child{
+    margin-right: auto;
+
+}
+
+
+
+.bgc {
+    margin-top: 0;
+   background-color: rgba(255, 255, 255, 0.5);
+   height: 4rem;       
+   transition: all 0.7s ease; 
+}
+
+.bgc .logo {
+    width: 110px; 
+    top: 5px; 
+    left: 70px;
+    transition: all 0.7s ease; 
+}
+
+.bgc ul li a{ 
+    font-size: 13px;
+    transition: all 0.3s ease; 
+ }
+
+
+
+
+
+.research-analysis {
+    background: url(images/research.png) center center / cover no-repeat; 
+    min-height: 50vh; 
+    height: 50vh;
+    z-index: -1;
+
+}
+
+.research-analysis-content{
+    background-color: white;
+}
+
+.research-body{
+    min-height: 50vh;
+    max-width: 100%;
+    padding: 50px 200px; 
+    margin: 0 auto; 
+}
+
+.research-body h2{
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+.research-body span{
+    font-weight: bold;
+}
+
+.research-body p{
+    font-size: 1rem;
+}
+
+.research-components{
+    margin-top:20px;
+    margin-bottom: 0;
+    width: 100%;
+    min-height: 20vh;
+    background-color:#e1ecf5;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.research-components h2{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+.research-components p{
+    font-size: 1rem;
+}
+
+.img-components {
+  display: flex;           
+  justify-content: center; 
+  align-items: center;     
+  margin-top: 20px;        
+  padding: 10px;            
+}
+
+.img-components img {
+  margin: 0 10px;           
+  width: 40%;       
+  height: auto;   
+  border: 6px solid #e1ecf5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)    
+}
+
+
+.physiochemical {
+    margin-top: 1%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    padding: 5rem; 
+    background: none;
+    background-size: cover;
+    min-height: 70vh;
+    text-align: left;
+    position: relative; 
+    overflow: hidden;
+}
+
+.physiochemical-content {
+    flex: 1; 
+    max-width: 50%; 
+    padding: 5rem; 
+    margin-top: 15rem;
+    position: relative;
+    z-index: 2;
+}    
+
+.physiochemical-content h2 {
+    font-size: 2.1rem;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    margin-top: -15rem;
+    margin-bottom: 1.4rem;
+}
+
+.physiochemical-content h2::after {
+    content: '';
+    display: block;
+    width: 50%; 
+    height: 3px; 
+    background-color: #bc284a;
+    margin-top: 10px;
+    margin-right: 51rem;
+    position: relative;
+}
+
+.physiochemical-content p {
+    font-size: 1.1rem;
+    color: black;
+    position: relative;
+    line-height: 1.4;
+}
+
+.video {
+    flex: 1;
+    display: block; 
+    padding-left: .5rem; 
+    position: relative;
+    text-align: right;
+}
+
+video {
+    max-width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.conclusion{
+    margin-top:20px;
+    margin-bottom: 100px;
+    width: 100%;
+    min-height: 20vh;
+    background-color:#e1ecf5;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.conclusion h2{
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+}
+
+
+
+.conclusion p{
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+.health-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 50px 100px; 
+    margin: -40px auto 0; 
+    flex-wrap: nowrap;
+    gap: 20px; 
+}
+
+.health-benefits-h2 {
+    width: 100%; 
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.1rem;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.benefits-card {
+    position: relative;
+    width: 1500px;
+    height: 340px;
+    margin: 10px; 
+    perspective: 1000px; 
+
+}
+
+.benefits-card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.benefits-card .front {
+    transform: rotateY(0deg);
+}
+
+.benefits-card .back {
+    transform: rotateY(180deg);
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.benefits-card:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.benefits-card:hover .back {
+    transform: rotateY(0deg);
+}
+
+.benefits-card .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benefits-card .front h3 {
+font-weight: bold;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  background:white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+  text-transform: uppercase;
+}
+
+.benefits-card .back h3::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px; 
+    background-color: #bc284a;
+    margin: 10px auto 0; 
+    position: relative;
+}
+
+.benefits-card .back h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.benefits-card .back p {
+    margin: 20px 0;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+.references {
+    margin: 10px 0; 
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+}
+
+.references h2 {
+    display: flex; 
+    align-items: flex-start; 
+    font-size: 1rem; 
+    margin-bottom: 10px; 
+    font-weight: bold;
+}
+
+.references ol {
+    padding-left: 20px;
+    line-height: 1.6; 
+    font-size: 12px;
+}
+
+
+.custom-divider {
+    width: 90%; 
+    margin: 2rem auto; 
+    border: none;
+    height: 1px; 
+    background-color: black; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+footer{
+    width: 100%;
+    position: absolute;
+    background: transparent;
+    color: #2d0b00;
+    padding: 80px 0 30px;
+    line-height: 20px;
+
+}
+
+.logo1{
+    width: 40%;
+    margin-bottom: 20px;
+    margin-top: -5%;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: 25%;
+    padding: 15px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    font-size: 14px;
+    position: relative;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.col p {
+       font-size: 12px;
+}
+.col i {
+    margin-right: 8px;
+    color: #8D263E;
+}
+.col .name{
+    font-weight: bold;
+
+}
+
+.email-id{
+    width: fit-content;
+    margin: 8px 0;
+}
+
+.col ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.col ul a:hover{
+    color: #bc284a;
+    margin-left: 5px;
+    transition: all 0.3s ease 0s;
+}
+.col ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    transition: all 0.3s ease 0s;
+}
+
+ form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+ form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+ form input{
+    width: 80%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background-size: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+}
+
+form button .fas{
+    font-size: 16px;
+    color: #bc284a;
+    border-color: white;
+
+}
+
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    background:  #8D263E;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fab:hover{
+    color: #2426b;
+    background-color: #ffffff;
+    color: #bc284a;
+    border-color: #bc284a;
+     transition: all 0.3s ease 0s;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+.bottom-bar {
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px 0;
+    background: linear-gradient(to right,#2d0b00, #8D263E, #bc284a,#8D263E, #2d0b00);
+}
+
+.bottom-bar p{
+    color: ghostwhite;
+    font-size: 13px;
+    padding: 7px;
+
+}
+
+@media (max-width: 800px){
+  footer{
+        bottom: unset;
+    }
+    .col{
+    flex-basis: 100%;
+  
+    }
+
+    .bottom-bar p{
+    font-size: 11px;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phytos - Innovative solutions for managing diabetes and hypertension with natural supplements.">
+  <title>Phytos</title>
+  <link rel="stylesheet" href="about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal"></script>  
+
+</head>
+<body>
+  <section class="about-us">
+   <div class="nav-links">
+    <img src="images/logo.png" class="logo">
+    <nav>
+       <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Product.html">ABOUT US</a></li>
+        <li><a href="Research.html">STUDIES & FINDINGS</a></li>
+        <li><a href="About.html">OUR TEAM</a></li>
+     </ul>
+    </nav>
+    </div>
+  </section> 
+
+  <section class="about-us-content">
+   
+    <h1>At <span style="color: #bc284a; font-weight: bold;">PHYTOS</span>, we are proud to have a dedicated and experienced team that combines passion and expertise in health and wellness. <h1>
+      <p>Our diverse backgrounds in pharmaceuticals, quality assurance, veterinary medicine, and research empower us to create effective products designed to improve health outcomes.</p>
+      </section>
+
+<hr class="custom-divider">
+
+<h2>Meet Our <span style="color: #bc284a; font-weight: bold;">PHYTOS Team</span></h2>
+
+ <section class="team">
+  <img src="images/team.svg" alt="Centered Image">
+</section>
+
+<hr class="custom-divider">
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="images/logo1.png" class="logo1">
+      <p>At Phytos, we are committed to harnessing nature’s finest ingredients with advanced technology to support your health journey. Our dedication to sustainability, quality, and innovation reflects our promise to bring you the best in natural wellness.
+      </p>
+    </div>
+    <div class="col">
+      <h3>OUR COMPANY</h3>
+      <p class="name"> <i class="fa-solid fa-city"></i>VALLEY SCIENCES RESEARCH AND DEVELOPMENT INC.</p>
+      <p><i class="fa-solid fa-location-dot"></i>Unit 1709. Annapolis Wilshire Plaza II, Annapolis St.,Greenhills, San Juan City, Metro Manila</p>
+      <p class="email-id"><i class="fa-solid fa-envelope"></i>vsrdi.ph@gmail.com</p>        
+      <p><i class="fa-solid fa-phone"></i>+63 9171283115</p>
+    </div>
+    <div class="col">
+      <h3>LINKS</h3>
+      <ul><a href="">HOME</a></ul>        
+      <ul><a href="">ABOUT US</a></ul>
+      <ul><a href="">STUDIES & FINDINGS</a></ul>
+      <ul><a href="">OUR TEAM</a></ul>
+    </div>
+    <div class="col">
+    <h3>KNOW MORE ABOUT PHYTOS</h3>
+    <form>
+        <i class="far fa-envelope"></i>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+    </form>
+    <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-viber"></i>
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    </div>
+  </div>
+  <div class="bottom-bar">
+    <p> &copy; Valley Sciences Research & Development 2024. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function showSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display ='flex'
+  }
+    function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display ='none'
+  }
+  
+</script>
+<script>
+  $(document).ready(function() {
+    $(window).on('scroll', function() {
+      if ($(window).scrollTop() > 0) { 
+        $(".nav-links").addClass('bgc'); 
+      } else {
+        $(".nav-links").removeClass('bgc'); 
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
